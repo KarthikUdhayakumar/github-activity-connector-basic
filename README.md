@@ -37,7 +37,7 @@ gradle clean bootRun
 The app starts on **http://localhost:8080**.
 
 ### 5) Try the API
-Fetch the last **10 commits per repo** (default) for owner
+Fetch the last **20 commits per repo** (default) for owner
 `spring-projects` (auto-detect user/org):
 ```bash
 curl "http://localhost:8080/api/v1/owners/spring-projects/\

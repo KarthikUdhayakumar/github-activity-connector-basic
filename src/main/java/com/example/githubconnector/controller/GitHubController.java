@@ -59,7 +59,7 @@ public class GitHubController {
             @Parameter(description = "GitHub user/org handle")
             @PathVariable @NotBlank String owner,
             @Parameter(description = "Commits per repo (default 10)")
-            @RequestParam(defaultValue = "10")
+            @RequestParam(defaultValue = "20")
             @Min(1) int commits,
             @Parameter(description = "Max repositories (default 50)")
             @RequestParam(defaultValue = "50")
