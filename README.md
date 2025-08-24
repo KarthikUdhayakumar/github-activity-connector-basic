@@ -61,9 +61,8 @@ to try the endpoint, or get raw spec at:
 - **Owner detection**: we query `/users/{{owner}}` and check
   `"type": "User" | "Organization"`. You may override via
   `ownerType` query param.
-- **Pagination**: repos are paged with `per_page=100&page=N`.
-  Commits use `per_page={commits}`.
-- **Rate limits**: on 429s or 403s, the service returns appropriate error for that repo and continues, keeping the API
+- **Pagination**: repos and commits are paged with `per_page` and `page` query parameters.
+- **Rate limits**: the service returns appropriate error, keeping the API
   responsive.
 - **Auth**: add `GITHUB_TOKEN` env var to authenticate.
 - **Extensibility**: service + DTO design is simple to extend

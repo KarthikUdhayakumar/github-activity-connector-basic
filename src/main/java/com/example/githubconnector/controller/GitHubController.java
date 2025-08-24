@@ -58,7 +58,7 @@ public class GitHubController {
     public List<RepoActivityDto> getRepoActivities(
             @Parameter(description = "GitHub user/org handle")
             @PathVariable @NotBlank String owner,
-            @Parameter(description = "Commits per repo (default 10)")
+            @Parameter(description = "Commits per repo (default 20)")
             @RequestParam(defaultValue = "20")
             @Min(1) int commits,
             @Parameter(description = "Max repositories (default 50)")
